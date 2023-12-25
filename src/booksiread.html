@@ -1,30 +1,39 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Books I Read</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
     <script
       src="https://kit.fontawesome.com/3fcd3104bc.js"
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body style="background-color: #DDF2FD">
     <header>
-      <nav class="other-nav">
+      <nav
+        class="other-nav p-4 d-flex justify-content-between text-white"
+        style="background-color: #164863"
+      >
         <p
           ><a href="index.html" title="going to home"
-            ><i class="fa fa-arrow-left" aria-hidden="true"></i></a
+            ><i
+              class="fs-2 text-white fas fa-arrow-left"
+              aria-hidden="true"
+            ></i></a
         ></p>
-        <p>Books I Read</p>
+        <h1>Books I read</h1>
         <p class="spaceholder"></p>
       </nav>
     </header>
     <main>
       <div class="books">
         <article class="books-container">
-          <figure>
+          <figure class="position-relative mx-auto p-2" style="width: 30%">
             <img
               src="images/booksiread.jpeg"
               alt="mobile project"
@@ -35,11 +44,17 @@
         </article>
 
         <!-- Arrows and Dots for Image Sliding Direction -->
-        <div class="slideshow-controls">
+        <div class="slideshow-controls text-center">
           <div class="dots-container">
-            <span class="dot" onclick="slideShow(0, 'books')"></span>
-            <span class="dot" onclick="slideShow(1, 'books')"></span>
-            <span class="dot" onclick="slideShow(2, 'books')"></span>
+            <span class="dot" onclick="slideShow(0, 'books')"
+              ><i class="fas fa-dot-circle"></i
+            ></span>
+            <span class="dot" onclick="slideShow(1, 'books')"
+              ><i class="fas fa-dot-circle"></i
+            ></span>
+            <span class="dot" onclick="slideShow(2, 'books')"
+              ><i class="fas fa-dot-circle"></i
+            ></span>
           </div>
         </div>
       </div>
@@ -54,8 +69,9 @@
           the father of his childhood best friend (referred to as "Rich Dad").
         </p>
         <div class="read">
-          <button class="btn btn_read"
+          <button"
             ><a
+              class="btn btn-outline-primary m-4 p-2"
               href="https://www.amazon.com/Rich-Dad-Poor-Teach-Middle/dp/1612680194"
               id="bo-read"
               target="_blank"
@@ -66,9 +82,9 @@
       </section>
     </main>
 
-    <footer>
+    <footer class="text-center" style="background-color: #9bbec8">
       <div class="footer-content">
-        <div class="my-socials">
+        <div class="my_socials">
           <a
             href="https://www.facebook.com/your-facebook-profile"
             target="_blank"
@@ -118,9 +134,11 @@
         </div>
       </div>
     </footer>
-    <div class="copyright">
+    <div class="copyright mt-0 text-center text-white" style="background-color: #164863;">
       <p>&copy; 2023 Abdulmejd Kelil. All rights reserved.</p>
     </div>
     <script src="js/script.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../node_modules/@popperjs/core/dist/cjs/popper.js"></script>
   </body>
 </html>

@@ -1,68 +1,121 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
     <script
       src="https://kit.fontawesome.com/3fcd3104bc.js"
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body style="background-color: #164863">
     <header>
-      <div class="index-top">
-        <i class="toggle fas fa-times" id="dismiss" onclick="toggleMenu()"></i>
-        <div class="my_title">Junior Software Engineer</div>
+      <div
+        class="index-top p-4 text-white text-center d-flex justify-content-between"
+      >
+        <i
+          class="toggle fs-2 fas fa-times"
+          id="dismiss"
+          onclick="toggleMenu()"
+        ></i>
+        <div class="my_title"><h1>Junior Software Engineer</h1></div>
+        <div class="placeholder"></div>
       </div>
-      <nav class="index-nav">
-        <ul id="nav-home">
-          <li class="nav-li-item"><a href="whoami.html">Who am I</a></li>
-          <li class="nav-li-item"><a href="projects.html">Projects</a></li>
-          <li class="nav-li-item">
-            <a href="booksiread.html">Books I read</a></li
+      <nav
+        class="index-nav p-5 row"
+        style="background-image: url(images/developer_img.jpeg)"
+      >
+        <ul id="nav-home" class="list-unstyled text-decoration-none col-4">
+          <li class="nav-li-item bg-primary m-1 p-2 rounded"
+            ><a href="whoami.html" class="text-white text-decoration-none"
+              >Who am I</a
+            ></li
           >
-          <li class="nav-li-item"><a href="belifs.html">beliefs</a></li>
-          <li class="nav-li-item"><a href="hobby.html">Hobby</a></li>
+          <li class="nav-li-item bg-primary text-white m-1 p-2 rounded"
+            ><a href="projects.html" class="text-white text-decoration-none"
+              >Projects</a
+            ></li
+          >
+          <li class="nav-li-item bg-primary text-white m-1 p-2 rounded">
+            <a
+              href="booksiread.html"
+              class="text-white text-decoration-none rounded"
+              >Books I read</a
+            ></li
+          >
+          <li class="nav-li-item bg-primary text-white m-1 p-2 rounded"
+            ><a href="belifs.html" class="text-white text-decoration-none"
+              >beliefs</a
+            ></li
+          >
+          <li class="nav-li-item bg-primary text-white m-1 p-2 rounded"
+            ><a href="hobby.html" class="text-white text-decoration-none"
+              >Hobby</a
+            ></li
+          >
         </ul>
       </nav>
     </header>
-    <section class="Tech_news">
-      <h2 class="main-news-title">The World Of Tech</h2>
+    <section
+      class="Tech_news justify-content-center text-white"
+      style="background-color: #164863"
+    >
+      <h2 class="main-news-title text-center">The World Of Tech</h2>
       <div class="the_news">
         <article class=".news-container">
-          <h3 class="news-headline">
-            <a href="#" id="news-headline"
+          <h3 class="news-headline text-center">
+            <a
+              href="#"
+              id="news-headline"
+              class="text-white text-decoration-none btn btn-outline-info"
               >Breakthrough in AI: Self-Learning Algorithms Redefine Machine
               Intelligence</a
             >
           </h3>
-          <figure>
+          <figure class="position-relative mx-auto p-2" style="width: 30%">
             <img
               src="images/tech.jpeg"
               alt="The tech news image from API"
               width="100%"
               id="news-image"
+              class=""
             />
+            <i
+              class="fas fa-chevron-left lef position-absolute top-50 start-0 translate-middle"
+              onclick="makeupdate()"
+            ></i>
+            <!-- Left Arrow -->
+            <i
+              class="fas fa-chevron-right ryt position-absolute top-50 start-100 translate-middle"
+              onclick="makeupdate()"
+            ></i>
           </figure>
         </article>
 
         <!-- Arrows and Dots for Image Sliding Direction -->
         <div class="slideshow-controls">
-          <i class="fas fa-chevron-left lef" onclick="makeupdate()"></i>
-          <!-- Left Arrow -->
-          <i class="fas fa-chevron-right ryt" onclick="makeupdate()"></i>
           <!-- Right Arrow -->
-          <div class="dots-container">
-            <span class="dot" onclick="makeupdate()"></span>
-            <span class="dot" onclick="makeupdate()"></span>
-            <span class="dot" onclick="makeupdate()"></span>
+          <div class="dots-container align-center text-center">
+            <span class="dot" onclick="makeupdate()"
+              ><i class="fas fa-dot-circle"></i
+            ></span>
+            <span class="dot" onclick="makeupdate()"
+              ><i class="fas fa-dot-circle"></i
+            ></span>
+            <span class="dot" onclick="makeupdate()"
+              ><i class="fas fa-dot-circle"></i
+            ></span>
           </div>
         </div>
       </div>
     </section>
-    <footer>
+    <footer class="text-center" style="background-color: #9bbec8">
       <div class="footer-content">
         <div class="my_socials">
           <a
@@ -114,9 +167,11 @@
         </div>
       </div>
     </footer>
-    <div class="copyright">
+    <div class="copyright mt-0 text-center text-white">
       <p>&copy; 2023 Abdulmejd Kelil. All rights reserved.</p>
     </div>
     <script src="js/script.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../node_modules/@popperjs/core/dist/cjs/popper.js"></script>
   </body>
 </html>

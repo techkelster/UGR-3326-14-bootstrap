@@ -1,29 +1,45 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>who am I</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
     <script
       src="https://kit.fontawesome.com/3fcd3104bc.js"
       crossorigin="anonymous"
     ></script>
     <script src="js/script.js"></script>
   </head>
-  <body>
+  <body style="background-color: #427d9d">
     <header>
-      <nav class="other-nav">
+      <nav
+        class="other-nav p-4 d-flex justify-content-between text-white"
+        style="background-color: #164863"
+      >
         <p
           ><a href="index.html" title="going to home"
-            ><i class="fa fa-arrow-left" aria-hidden="true"></i></a
+            ><i
+              class="fs-2 text-white fas fa-arrow-left text-white"
+              aria-hidden="true"
+            ></i></a
         ></p>
-        <p>Who am I</p>
+        <h1>who am I</h1>
         <p class="spaceholder"></p>
       </nav>
     </header>
     <article class="whoami-main">
-      <h2><a href="../file/cv.pdf" download="etlak_cv.pdf">MY CV</a></h2>
+      <h2
+        ><a
+          class="btn btn-outline-info p-4 m-2"
+          href="../file/cv.pdf"
+          download="etlak_cv.pdf"
+          >MY CV</a
+        ></h2
+      >
       <img src="images/whoami.jpeg" alt="my personal-images" width="300" />
       <p
         >Hey there! I'm Abdulmejd Kelil etlak, a third-year software engineering
@@ -65,7 +81,7 @@
         Cheers!</p
       >
     </article>
-    <footer>
+    <footer class="text-center" style="background-color: #9bbec8">
       <div class="footer-content">
         <div class="my_socials">
           <a
@@ -117,8 +133,11 @@
         </div>
       </div>
     </footer>
-    <div class="copyright">
+    <div class="copyright mt-0 text-center text-white">
       <p>&copy; 2023 Abdulmejd Kelil. All rights reserved.</p>
     </div>
+    <script src="js/script.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../node_modules/@popperjs/core/dist/cjs/popper.js"></script>
   </body>
 </html>

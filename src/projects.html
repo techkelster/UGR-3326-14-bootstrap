@@ -1,63 +1,80 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
     <script
       src="https://kit.fontawesome.com/3fcd3104bc.js"
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body style="background-color: #164863">
     <header>
-      <nav class="other-nav">
+      <nav
+        class="other-nav p-4 d-flex justify-content-between text-white"
+        style="background-color: #164863"
+      >
         <p
           ><a href="index.html" title="going to home"
-            ><i class="fa fa-arrow-left" aria-hidden="true"></i></a
+            ><i
+              class="text-white fs-2 fas fa fa-arrow-left"
+              aria-hidden="true"
+            ></i></a
         ></p>
-        <p>Projects</p>
+        <h1>Projects</h1>
         <p class="spaceholder"></p>
       </nav>
     </header>
     <main>
       <div class="projects">
         <article class=".project-container">
-          <h3 class="project-headline">
-            <a href="#" id="pro-link">Weather Mobile App</a>
+          <h3 class="project-headline text-center">
+            <a href="#" id="pro-link" class="btn btn-outline-primary"
+              >Weather Mobile App</a
+            >
           </h3>
-          <figure>
+          <figure class="position-relative mx-auto p-2" style="width: 30%">
             <img
               src="images/weather_mobile.jpeg"
               alt="mobile project"
               width="100%"
               id="pro-img"
             />
+            <i
+              class="fas fa-chevron-left lef position-absolute top-50 start-0 translate-middle"
+              onclick="slideShow('lef', 'projects')"
+            ></i>
+            <!-- Left Arrow -->
+            <i
+              class="fas fa-chevron-right ryt position-absolute top-50 start-100 translate-middle"
+              onclick="slideShow('ryt', 'projects')"
+            ></i>
           </figure>
         </article>
 
         <!-- Arrows and Dots for Image Sliding Direction -->
-        <div class="slideshow-controls">
-          <i
-            class="fas fa-chevron-left lef"
-            onclick="slideShow('lef', 'projects')"
-          ></i>
-          <!-- Left Arrow -->
-          <i
-            class="fas fa-chevron-right ryt"
-            onclick="slideShow('ryt', 'projects')"
-          ></i>
+        <div class="slideshow-controls text-center">
           <!-- Right Arrow -->
-          <div class="dots-container">
-            <span class="dot" onclick="slideShow(0, 'projects')"></span>
-            <span class="dot" onclick="slideShow(1, 'projects')"></span>
-            <span class="dot" onclick="slideShow(2, 'projects')"></span>
+          <div class="dots-container text-center">
+            <span class="dot" onclick="slideShow(0, 'projects')"
+              ><i class="fas fa-dot-circle"></i
+            ></span>
+            <span class="dot" onclick="slideShow(1, 'projects')"
+              ><i class="fas fa-dot-circle"></i
+            ></span>
+            <span class="dot" onclick="slideShow(2, 'projects')"
+              ><i class="fas fa-dot-circle"></i
+            ></span>
           </div>
         </div>
       </div>
     </main>
-    <footer>
+    <footer class="text-center" style="background-color: #9bbec8">
       <div class="footer-content">
         <div class="my_socials">
           <a
@@ -109,9 +126,11 @@
         </div>
       </div>
     </footer>
-    <div class="copyright">
+    <div class="copyright mt-0 text-center text-white">
       <p>&copy; 2023 Abdulmejd Kelil. All rights reserved.</p>
     </div>
     <script src="js/script.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../node_modules/@popperjs/core/dist/cjs/popper.js"></script>
   </body>
 </html>

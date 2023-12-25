@@ -1,27 +1,40 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>beliefs</title>
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
     <script
       src="https://kit.fontawesome.com/3fcd3104bc.js"
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body style="background-color: #427d9d">
     <header>
-      <nav class="other-nav">
+      <nav
+        class="other-nav p-4 d-flex justify-content-between text-white"
+        style="background-color: #164863"
+      >
         <p
           ><a href="index.html" title="going to home"
-            ><i class="fa fa-arrow-left" aria-hidden="true"></i></a
+            ><i
+              class="text-center fs-2 fas fa-arrow-left"
+              aria-hidden="true"
+            ></i></a
         ></p>
-        <p>beliefs</p>
+        <h1>beliefs</h1>
         <p class="spaceholder"></p>
       </nav>
     </header>
-    <main>
+    <main
+      class="position-relative m-4 mt-0 p-4"
+      style="background-color: #ddf2fd"
+    >
       <div class="ideas">
         <div class="quote-container">
           <blockquote class="quote" id="bel-desc">
@@ -30,20 +43,34 @@
             <cite>- Franklin D. Roosevelt</cite>
           </blockquote>
         </div>
-
+        <i
+          class="bg-light fas fa-chevron-left lef position-absolute top-50 start-0 translate-middle"
+          onclick="realslide('lef')"
+        ></i>
+        <!-- Left Arrow -->
+        <i
+          class="bg-light fas fa-chevron-right ryt position-absolute top-50 start-100 translate-middle"
+          onclick="realslide('ry')"
+        ></i>
         <!-- Arrows and Dots for Image Sliding Direction -->
         <div class="slideshow-controls">
-          <div class="dots-container">
-            <span class="dot" onclick="slideShow(0, 'beliefs')"></span>
-            <span class="dot" onclick="slideShow(1, 'beliefs')"></span>
-            <span class="dot" onclick="slideShow(2, 'beliefs')"></span>
+          <div class="dots-container text-center">
+            <span class="dot" onclick="slideShow(0, 'beliefs')"
+              ><i class="fas fa-dot-circle"></i
+            ></span>
+            <span class="dot" onclick="slideShow(1, 'beliefs')"
+              ><i class="fas fa-dot-circle"></i
+            ></span>
+            <span class="dot" onclick="slideShow(2, 'beliefs')"
+              ><i class="fas fa-dot-circle"></i
+            ></span>
           </div>
         </div>
       </div>
     </main>
-    <footer>
+    <footer class="text-center" style="background-color: #9bbec8">
       <div class="footer-content">
-        <div class="my-socials">
+        <div class="my_socials">
           <a
             href="https://www.facebook.com/your-facebook-profile"
             target="_blank"
@@ -93,9 +120,11 @@
         </div>
       </div>
     </footer>
-    <div class="copyright">
+    <div class="copyright mt-0 text-center text-white">
       <p>&copy; 2023 Abdulmejd Kelil. All rights reserved.</p>
     </div>
     <script src="js/script.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../node_modules/@popperjs/core/dist/cjs/popper.js"></script>
   </body>
 </html>

@@ -1,30 +1,39 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hobby</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
     <script
       src="https://kit.fontawesome.com/3fcd3104bc.js"
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body style="background-color: #427d9d">
     <header>
-      <nav class="other-nav">
+      <nav
+        class="other-nav p-4 d-flex justify-content-between text-white"
+        style="background-color: #164863"
+      >
         <p
           ><a href="index.html" title="going to home"
-            ><i class="fa fa-arrow-left" aria-hidden="true"></i></a
+            ><i
+              class="fs-2 text-white fas fa-arrow-left"
+              aria-hidden="true"
+            ></i></a
         ></p>
-        <p>My Hobby</p>
+        <h1>Hobby</h1>
         <p class="spaceholder"></p>
       </nav>
     </header>
     <main>
       <div class="hobby">
         <article class="hobby-co">
-          <figure>
+          <figure class="position-relative mx-auto p-2" style="width: 30%">
             <img
               id="ho-img"
               src="images/hobby.jpeg"
@@ -35,14 +44,20 @@
         </article>
 
         <!-- Arrows and Dots for Image Sliding Direction -->
-        <div class="slideshow-controls">
+        <div class="slideshow-controls text-center">
           <div class="dots-container">
-            <span class="dot" onclick="slideShow(0, 'hobby')"></span>
-            <span class="dot" onclick="slideShow(1, 'hobby')"></span>
-            <span class="dot" onclick="slideShow(2, 'hobby')"></span>
+            <span class="dot" onclick="slideShow(0, 'hobby')"
+              ><i class="fas fa-dot-circle"></i
+            ></span>
+            <span class="dot" onclick="slideShow(1, 'hobby')"
+              ><i class="fas fa-dot-circle"></i
+            ></span>
+            <span class="dot" onclick="slideShow(2, 'hobby')"
+              ><i class="fas fa-dot-circle"></i
+            ></span>
           </div>
         </div>
-        <div class="hobby-des" id="ho-des">
+        <div class="hobby-des text-center" id="ho-des">
           <p>
             Bike riding is my favorite hobby. It's a refreshing and meditative
             experience, allowing me to stay active, clear my mind, and find joy
@@ -52,9 +67,9 @@
         </div>
       </div>
     </main>
-    <footer>
+    <footer class="text-center" style="background-color: #9bbec8">
       <div class="footer-content">
-        <div class="my-socials">
+        <div class="my_socials">
           <a
             href="https://www.facebook.com/your-facebook-profile"
             target="_blank"
@@ -104,9 +119,11 @@
         </div>
       </div>
     </footer>
-    <div class="copyright">
+    <div class="copyright mt-0 text-center text-white">
       <p>&copy; 2023 Abdulmejd Kelil. All rights reserved.</p>
     </div>
     <script src="js/script.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../node_modules/@popperjs/core/dist/cjs/popper.js"></script>
   </body>
 </html>
